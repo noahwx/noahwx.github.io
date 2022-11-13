@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Horizon - Profile</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/vun6ufn.css">
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <div id="btn">
+            <button onclick="toggleNav()"><span class="btn-text">+</span></button>
+            <h2 class="menu-head">Menu</h2>
+        </div>
+
+        <div id="menu">
+            <div class="menu-items"> 
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="profile.html" class="menu-item-page">Profile</a>
+                <a href="browse.html" class="menu-item">Browse</a>
+                <a href="library.html" class="menu-item">Library</a>
+                <a href="settings.html" class="menu-item">Settings</a>
+                <a href="support.html" class="menu-item">Support</a>
+                <a href="#" class="menu-item trigger">Login</a>
+            </div>
+          </div>
+          <div>
+            <h1 class="menu-title">Horizon</h1>
+          </div>
+        </div>
+
+        <div id="main-container">
+            <h1 class="page-title">User</h1>
+            <div class="container-library">
+                <div class="profile-bg-container">
+
+                </div>
+                <div class="profile-img-container">
+
+                </div>
+                <div class="profile-info-container">
+                    <div>
+                        <h3>Followers</h3>
+                        <p>0</p>
+                    </div>
+                    <div>
+                        <h3>Likes</h3>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="profile-feed-container">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h1 class="form-head">Login</h1>
+                <form>
+                    <div class="uname">
+                        <label for="uname" class="labelu">Username</label>
+                        <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+                    </div>
+                    <div class="upass">
+                        <label for="upass" class="labelp">Password</label>
+                        <input type="password" placeholder="Enter Password" name="upass" class="upass" required>
+                    </div>
+                    <div id="form-btns">
+                        <button type="submit" class="btn-login">Login</button>
+                        <button type="submit" class="btn-signup">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <script src="modal.js"></script>
+    </body>
+</html>

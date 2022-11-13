@@ -1,1 +1,95 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+      <title>Horizon</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://use.typekit.net/vun6ufn.css">
+      <script src="app.js"></script>
+    </head>
+
+    <body>
+      <div>
+        <div id="btn">
+          <button onclick="toggleNav()"><span class="btn-text">+</span></button>
+          <h2 class="menu-head">Menu</h2>
+        </div>
+
+        <div id="menu">
+          <div class="menu-items"> 
+            <a href="index.html" class="menu-item-page">Home</a>
+            <a href="profile.html" class="menu-item">Profile</a>
+            <a href="browse.html" class="menu-item">Browse</a>
+            <a href="library.html" class="menu-item">Library</a>
+            <a href="settings.html" class="menu-item">Settings</a>
+            <a href="support.html" class="menu-item">Support</a>
+            <a href="#" class="menu-item trigger">Login</a>
+          </div>
+        </div>
+          <div>
+            <h1 class="menu-title">Horizon</h1>
+          </div>
+        </div>
+
+        <div id="main-container">
+            <div class="container-1">
+              <div class="settings-search">
+                <input type="text" placeholder="Find Something New" class="set-search-bar main-search">
+              </div>
+            </div>
+            <div class="container-2">
+              <h1 class="page-subtitle">New Releases</h1>
+            </div>
+            <div class="container-3">
+              <h1 class="page-subtitle">Upcoming Releases</h1>
+            </div>
+            <div class="container-4">
+              <h1 class="page-subtitle">Categories</h1>
+            </div>
+        </div>
+
+        <div id="now-playing-container">
+          <div class="media-controls">
+
+          </div>
+          <div class="now-playing">
+            <div class="ablum-img">
+
+            </div>
+            <div class="ablum-info">
+              <a href="#" class="ai-link"><h4>Unknown Ablum</h4></a>
+              <a href="#" class="ai-link"><p>Unknown Artist</p></a>
+            </div>
+            <div class="time-remain"></div>
+          </div>
+          <div class="volume-control">
+            <input type="range" id="volume-control">
+          </div>
+          <div class="share-controls">
+
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1 class="form-head">Login</h1>
+            <form>
+                <div class="uname">
+                    <label for="uname" class="labelu">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+                </div>
+                <div class="upass">
+                    <label for="upass" class="labelp">Password</label>
+                    <input type="password" placeholder="Enter Password" name="upass" class="upass" required>
+                </div>
+                <div id="form-btns">
+                    <button type="submit" class="btn-login">Login</button>
+                    <button type="submit" class="btn-signup">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+    <script src="modal.js"></script>
+  </body>
+</html>
