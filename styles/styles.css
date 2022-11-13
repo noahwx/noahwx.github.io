@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #F4F4F9;
+}
+
+.active {
+    border: 2px dashed #7286A0;
+    border-radius: 10px;
+}
+
+.container-title {
+    font-family: bungee,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: clamp(2rem, 4vw, 2rem);
+    letter-spacing: 5px;
+
+    color: #F4F4F9;
+
+    position: relative;
+    margin-bottom: 10vh;
+    z-index: 3;
+
+    background-color: #FE5F55;
+    height: 8vh;
+    width: auto;
+
+    box-shadow: 5px 5px 0px 0px #141414;
+}
+
+h1 {
+    text-shadow: 5px 5px #141414;
+}
+
+/* Menu Stuff */
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+    margin-top: 2vh;
+}
+
+.menu-logo {
+    height: 10vh;
+    width: 10vw;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: transform 400ms ease;
+}
+
+.menu-items {
+    font-family: bungee,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    transition: opacity 1s ease;
+}
+
+.menu-item {
+    position: relative;
+
+    font-size: clamp(1.2rem, 2.2vw, 1.2rem);
+    text-decoration: none;
+    color: #7286A0;
+
+    background: none;
+
+    padding: 5px;
+
+    transition: opacity 1s ease, color 500ms ease;
+}
+
+.menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+
+.menu-items:hover > .menu-item:hover {
+    opacity: 1;
+    color: #FE5F55;
+    border: 2px dashed #141414;
+    border-radius: 10px;
+}
+
+.menu-logo:hover {
+    transform: scale(1.05);
+}
+
+.menu-logo:active {
+    transform: scale(0.95);
+}
+
+/* Main Container */
+
+#main-container {
+    position: relative;
+    margin-left: 15vw;
+    margin-top: 5vh;
+
+    height: 50vh;
+    width: 45vw;
+
+    background-color: #7286A0;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0px 0px #141414;
+}
+
+
+/* Trend Container */
+
+#trend-container {
+    position: fixed;
+    right: 14vw;
+    top: 17.5vh;
+
+    height: 50vh;
+    width: 20vw;
+
+    background-color: #7286A0;
+    box-shadow: 5px 5px 0px 0px #141414;
+    border-radius: 25px;
+}
+
+/* Top Picks Container */
+
+#tp-container {
+    position: fixed;
+    left: 50%;
+    bottom: 2vh;
+    transform: translate(-50%);
+    margin: 0 auto;
+
+    height: 25vh;
+    width: 71vw;
+
+    border-radius: 25px;
+
+    background-color: #7286A0;
+    box-shadow: 5px 5px 0px 0px #141414;
+}
