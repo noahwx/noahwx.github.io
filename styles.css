@@ -56,7 +56,7 @@ html {
 
 .menu-items:hover > .menu-item:hover {
     opacity: 1;
-    color: #0E2238;
+    color: #3295FF;
     text-decoration: underline;
 }
 
