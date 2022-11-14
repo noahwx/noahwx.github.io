@@ -179,7 +179,6 @@ h1 {
 
 .container-img:active {
     transform: scale(1);
-    
 }
 
 /* Trend Container */
@@ -200,7 +199,7 @@ h1 {
 /* Top Picks Container */
 
 #tp-container {
-    position: fixed;
+    position: absolute;
     left: 50.5vw;
     bottom: 2vh;
     transform: translate(-50%);
@@ -213,7 +212,35 @@ h1 {
 
     background-color: #7286A0;
     box-shadow: 5px 5px 0px 0px #141414;
+
+    overflow: hidden;
 }
+
+.tp-box {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+
+    transition: filter 400ms ease, transform 400ms ease;
+}
+
+.tp-img {
+    position: absolute;
+    top: 2vh;
+
+    width: 100%;
+    height: auto;
+}
+
+.tp-box:hover {
+    filter: grayscale(100%);
+    transform: scale(1.05);
+}
+
+.tp-box:active {
+    transform: scale(1);
+} 
 
 /* New Container */
 
