@@ -20,6 +20,7 @@ html {
 #menu {
     position: fixed;
     bottom: 7vh;
+    height: 40vh;
     width: 40vw;
     margin-left: 23%;
     padding: 1em;
