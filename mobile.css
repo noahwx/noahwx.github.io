@@ -11,13 +11,20 @@ html {
     display: none;
 }
 
+.menu-item.active {
+    color: #F09D51;
+}
+
 /* Menu Styles */
 
 #menu {
     position: fixed;
-    left: 0;
-    width: 7vw;
+    bottom: 5vh;
+    width: 45vw;
+    margin-left: 25%;
     padding: 0.5em;
+
+    text-align: center;
 
     font-family: transducer,sans-serif;
     font-weight: 400;
@@ -26,12 +33,17 @@ html {
     font-size: clamp(1.5rem, 3vw, 1.5rem);
 
     visibility: hidden;
+
+    border-radius: 0.5em;
+
+    background-color: #131516;
 }
 
 .mobile-btn {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     margin-top: 1vh;
-    margin-left: 1vw;
+    margin-left: 45%;
     padding: 1vw;
 
     width: 10vw;
@@ -40,10 +52,24 @@ html {
     border: none;
 
     cursor: pointer;
+
+    transition: transform 200ms ease;
 }
 
 .menu-item {    
     text-decoration: none;
+    color: #E8E9EB;
+    text-align: center;
+
+    transition: transform 200ms ease;
+}
+
+.mobile-btn:active {
+    transform: scale(1.1);
+}
+
+.menu-item:active {
+    transform: scale(0.8);
 }
 
 /* Feed Container */
