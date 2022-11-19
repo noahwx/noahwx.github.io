@@ -149,7 +149,7 @@ html {
 
 #mobile-post-btn {
     position: fixed;
-    top: 6vh;
+    bottom: 1.5vh;
     margin-left: 10em;
 
     height: 4vh;
