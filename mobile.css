@@ -12,22 +12,37 @@ html {
 #menu {
     position: fixed;
     left: 0;
-    top: 30%;
     width: 7vw;
-    margin-top: -2.5em;
-    margin-left: 1vw;
+    padding: 0.5em;
 
     font-family: transducer,sans-serif;
     font-weight: 400;
     font-style: normal;
 
     font-size: clamp(1.5rem, 3vw, 1.5rem);
+
+    visibility: hidden;
 }
   
 .menu-logo {
-    width: 2vw;
+    position: relative;
+    padding: 0.5em;
+
+    width: 10vw;
 }
 
 .menu-item {    
     text-decoration: none;
+}
+
+/* Feed Container */
+
+#feed-container {
+    display: none;
+}
+
+/* Trend Container */
+
+#trend-container {
+    display: none;
 }
