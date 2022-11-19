@@ -28,7 +28,7 @@
             <div id="menu">
                 <div class="mobile-ui">
                     <div class="profile-img-mobile"></div>
-                    <div class="profile-username-m"><a href="./profile.html">@UserN</a></div>
+                    <div class="profile-username-m"><a href="./profile.html">@Username</a></div>
                 </div>
                 <div class="menu-items">
                     <a href="./index.html" class="menu-item active">Home</a>
@@ -44,6 +44,11 @@
         <div id="feed-container">
             <div class="feed-head">
                 <h1 class="feed-head-text">Latest Post</h1>
+                <button id="mobile-post-btn" onclick="togglePost()"><span>Post</span></button>
+                <button id="mobile-post-btn-c" onclick="togglePost()"><span>Close</span></button>
+            </div>
+            <div class="mobile-post">
+                <textarea type="text" placeholder="Post something..." id="m-post"></textarea>
             </div>
         </div>
 

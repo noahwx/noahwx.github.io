@@ -61,6 +61,10 @@ html {
     display: none;
 }
 
+#mobile-post-btn {
+    display: none;
+}
+
 /* Menu Styles */
 
 #menu {

@@ -96,7 +96,7 @@ html {
     position: fixed;
     bottom: 12vh;
     margin-top: 1vh;
-    margin-left: 3em;
+    margin-left: 1.7em;
 
     text-align: center;
 
@@ -109,7 +109,7 @@ html {
 
 .profile-username-m a {
     text-decoration: none;
-    color: #E8E9EB;
+    color: #969C9C;
 }
 
 .mobile-btn:active {
@@ -145,6 +145,71 @@ html {
     font-style: normal;
 
     font-size: clamp(1.6rem, 2vw, 1.6rem);
+}
+
+#mobile-post-btn {
+    position: fixed;
+    top: 6vh;
+    margin-left: 10em;
+
+    height: 4vh;
+    width: 14vw;
+
+    font-family: transducer,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    z-index: 5;
+
+    border: 2px solid #313638;
+    border-radius: 25em;
+
+    cursor: pointer;
+}
+
+#mobile-post-btn-c {
+    position: fixed;
+    top: 13vh;
+    margin-left: 10em;
+
+    height: 4vh;
+    width: 14vw;
+
+    font-family: transducer,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    z-index: 5;
+
+    border: 2px solid #313638;
+    border-radius: 25em;
+
+    cursor: pointer;
+
+    visibility: hidden;
+}
+
+#m-post {
+    position: absolute;
+    top: 6vh;
+    margin-left: 5vw;
+
+    height: 5vh;
+    width: 90vw;
+
+    border: 2px solid #313638;
+    background-color: #E8E9EB;
+
+    font-family: transducer,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: clamp(0.8rem, 1vw, 0.8rem);
+
+    text-align: center;
+    resize: none;
+
+    visibility: hidden;
 }
 
 /* Trend Container */
