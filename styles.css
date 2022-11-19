@@ -32,6 +32,27 @@ html {
     text-shadow: 1px 1px #F06543;
 }
 
+#search-bar {
+    position: fixed;
+    top: 15vh;
+    left: 25%;
+
+    width: 40vw;
+    height: 3vh;
+
+    text-align: center;
+
+    font-family: transducer,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: clamp(0.8rem, 1vw, 0.8rem);
+
+    background: none;
+    border: 2px solid #313638;
+    border-radius: 25em;
+}
+
 /* Menu Styles */
 
 #menu {
@@ -169,6 +190,25 @@ html {
     color: #313638;
 }
 
+.popular-trend {
+    position: fixed;
+    top: 21vh;
+
+    height: 30vh;
+    width: 60vw;
+
+    border-top: 2px solid #313638;
+    border-bottom: 2px solid #313638;
+}
+
+.current-trends {
+    position: fixed;
+    top: 51vh;
+
+    height: 70vh;
+    width: 60vw;
+}
+
 /* Explore Container */
 
 #explore-container {
@@ -212,7 +252,7 @@ html {
 .explore-tabs {
     position: fixed;
     top: 7vh;
-    left: 32vw;
+    left: 30%;
     height: 10vh;
     width: 60vw;
 
@@ -559,8 +599,73 @@ html {
     font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
+.settings-menu-n {
+    position: fixed;
+    left: 15vw;
+    top: 15vh;
+    width: 30vw;
+    height: 20vh;
+    margin-left: 1vw;
+
+    float: left;
+
+    font-family: transducer, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.settings-menu-noti {
+    position: fixed;
+    left: 15vw;
+    top: 15vh;
+    width: 20vw;
+    height: 20vh;
+    margin-left: 1vw;
+
+    float: left;
+
+    font-family: transducer, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.settings-menu-msg {
+    position: fixed;
+    left: 15vw;
+    top: 15vh;
+    width: 25vw;
+    height: 20vh;
+    margin-left: 1vw;
+
+    float: left;
+
+    font-family: transducer, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+
 .setting-item {
     position: relative;
+
+    text-decoration: none;
+    color: #313638;
+
+    padding: 1px;
+
+    transition: color 500ms ease,
+    opacity 500ms ease,
+    text-shadow 500ms ease;
+}
+
+.setting-item-n {
+    position: relative;
+    float: left;
 
     text-decoration: none;
     color: #313638;
@@ -580,4 +685,13 @@ html {
     opacity: 1;
     color: #F06543;
     text-shadow: 2px 2px #313638;
+}
+
+.settings-items:hover > .setting-item-n {
+    opacity: 0.3;
+}
+
+.settings-items:hover > .setting-item-n:hover{
+    opacity: 1;
+    color: #F06543;
 }
