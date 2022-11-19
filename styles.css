@@ -53,6 +53,14 @@ html {
     border-radius: 25em;
 }
 
+.mobile-ui {
+    display: none;
+}
+
+.mobile-btn {
+    display: none;
+}
+
 /* Menu Styles */
 
 #menu {
