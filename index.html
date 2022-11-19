@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
     <head>
-        <title>Crowdly</title>
+        <title>Howl | Latest Post</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://use.typekit.net/kll8eqe.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/gsg0mrd.css">
+        <script src="https://kit.fontawesome.com/4bd977ebc8.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="menu">
-            <img src="./assets/Logo.svg" class="menu-logo">
-            <div class="menu-items">
-                <a href="./index.html" class="menu-item active">Home</a>
-                <a href="./explore.html" class="menu-item">Explore</a>
-                <a href="./notifications.html" class="menu-item">Notifications</a>
-                <a href="./messages.html" class="menu-item">Messages</a>
-                <a href="./profile.html" class="menu-item">Profile</a>
-                <a href="./settings.html" class="menu-item">Settings</a>
+        <div id="menu-container">
+            <div>
+                <a href="./index.html"><img src="./assets/Logo.svg" class="menu-logo"></a>
+            </div>
+            <div id="menu">
+                <div class="menu-items">
+                    <a href="./index.html" class="menu-item active">Home</a>
+                    <a href="./explore.html" class="menu-item">Explore</a>
+                    <a href="./messages.html" class="menu-item">Messages</a>
+                    <a href="./notifications.html" class="menu-item">Notifications</a>
+                    <a href="./profile.html" class="menu-item">Profile</a>
+                    <a href="./settings.html" class="menu-item">Settings</a>
+                </div>
             </div>
         </div>
 
-        <div id="main-container">
-            <h1 class="main-title">Latest Posts</h1>
-            <div><img src="https://images.unsplash.com/photo-1659321196549-448fba0143fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" class="m-profile-img"></div>
-            <div class="post-container">
-                <textarea class="post-ta" placeholder="Let the crowd know..."></textarea>
-                <button class="post-btn">Post</button>
-            </div>
-        </div>
         <div id="feed-container">
+            <div class="feed-head">
+                <h1 class="feed-head-text">Latest Post</h1>
+            </div>
+        </div>
 
+        <div id="trend-container">
+            <div class="trend-head">
+                <h2 class="trend-head-text">Trending</h2>
+            </div>
         </div>
     </body>
 </html>

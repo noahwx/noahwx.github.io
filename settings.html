@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
     <head>
-        <title>Crowdly</title>
+        <title>Howl | Settings</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://use.typekit.net/kll8eqe.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/gsg0mrd.css">
+        <script src="https://kit.fontawesome.com/4bd977ebc8.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div id="menu">
-            <img src="./assets/Logo.svg" class="menu-logo">
-            <div class="menu-items">
-                <a href="./index.html" class="menu-item active">Home</a>
-                <a href="./explore.html" class="menu-item">Explore</a>
-                <a href="./notifications.html" class="menu-item">Notifications</a>
-                <a href="./messages.html" class="menu-item">Messages</a>
-                <a href="./profile.html" class="menu-item">Profile</a>
-                <a href="./settings.html" class="menu-item">Settings</a>
+        <div id="menu-container">
+            <div>
+                <a href="./index.html"><img src="./assets/Logo.svg" class="menu-logo"></a>
+            </div>
+            <div id="menu">
+                <div class="menu-items">
+                    <a href="./index.html" class="menu-item">Home</a>
+                    <a href="./explore.html" class="menu-item">Explore</a>
+                    <a href="./messages.html" class="menu-item">Messages</a>
+                    <a href="./notifications.html" class="menu-item">Notifications</a>
+                    <a href="./profile.html" class="menu-item">Profile</a>
+                    <a href="./settings.html" class="menu-item active">Settings</a>
+                </div>
             </div>
         </div>
 
-        <div id="main-container">
-            <h1 class="main-title">Settings</h1>
-            <div class="settings-container">
-                <div class="s-menu">
-                    <div class="s-items">
-                        <a href="./settings/account.html" class="setting-item">Your Account</a>
-                        <a href="./settings/monetization.html" class="setting-item">Monetization</a>
-                        <a href="./settings/security.html" class="setting-item">Security</a>
-                        <a href="./settings/privacy.html" class="setting-item">Privacy</a>
-                        <a href="./settings/notifications.html" class="setting-item">Notifications</a>
-                        <a href="./settings/accessibility.html" class="setting-item">Accessibility</a>
-                        <a href="./support.html" class="setting-item">Support</a>
+        <div id="settings-container">
+            <div class="settings-head">
+                <div class="back-btn" onclick="history.back()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <h1 class="settings-head-text">Settings</h1>
+                <div class="settings-menu">
+                    <div class="settings-items">
+                        <a href="#" class="setting-item t">Account</a>
+                        <a href="#" class="setting-item">Monetizations</a>
+                        <a href="#" class="setting-item">Notifications</a>
+                        <a href="#" class="setting-item">Messages</a>
+                        <a href="#" class="setting-item">Privacy</a>
+                        <a href="#" class="setting-item">Accessibility</a>
+                        <a href="#" class="setting-item">Support</a>
                     </div>
                 </div>
             </div>
