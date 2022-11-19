@@ -76,9 +76,10 @@ html {
     background-position: center;
     background-size: 100%;
 
-    position: fixed;
-    bottom: 15vh;
-    margin-left: 13vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
 
     text-align: center;
 
