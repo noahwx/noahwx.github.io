@@ -126,6 +126,8 @@ html {
     width: 100vw;
 
     border-bottom: 2px solid #313638;
+
+    z-index: 2;
 }
 
 .feed-head {
