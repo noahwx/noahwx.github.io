@@ -23,43 +23,11 @@ html {
 
     font-size: clamp(1.5rem, 3vw, 1.5rem);
 }
-
+  
 .menu-logo {
-    position: relative;
-    margin-top: 1vh;
-    margin-left: 1vw;
-    padding: 1vw;
-
-    width: 5vw;
-
-    transition: transform 500ms ease,
-    border-radius 200ms ease;
+    width: 2vw;
 }
 
-.menu-item {
-    position: relative;
-    padding: 1vw;
-
+.menu-item {    
     text-decoration: none;
-    color: #313638;
-
-    letter-spacing: 0.1vw;
-
-    transition: opacity 600ms ease,
-    margin-left 500ms ease,
-    font-weight 200ms ease;
-}
-
-.menu-items:hover > .menu-item {
-    opacity: 0.3;
-}
-
-.menu-items:hover > .menu-item:hover {
-    opacity: 1;
-    margin-left: 0.5vw;
-    font-weight: 800;
-}
-
-.menu-logo:hover {
-    transform: scale(1.05);
 }
