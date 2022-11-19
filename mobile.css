@@ -305,3 +305,53 @@ html {
     color: #F09D51;
     border-bottom: 2px solid #F09D51;
 }
+
+/* Message Styles */
+
+#msg-container {
+    position: fixed;
+    top: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #E8E9EB;
+}
+
+.msg-head {
+    text-align: center;
+    border-bottom: 2px solid #313638;
+}
+
+.msg-head-text {
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: clamp(1.6rem, 2vw, 1.6rem);
+}
+
+/* Notifications Styles */
+
+#noti-container {
+    position: fixed;
+    top: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #E8E9EB;
+}
+
+.noti-head {
+    text-align: center;
+    border-bottom: 2px solid #313638;
+}
+
+.noti-head-text {
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: clamp(1.6rem, 2vw, 1.6rem);
+}
