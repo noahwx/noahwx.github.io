@@ -65,6 +65,18 @@ html {
     display: none;
 }
 
+#mobile-post-btn-c {
+    display: none;
+}
+
+#m-post {
+    display: none;
+}
+
+.mobile-explore {
+    display: none;
+}
+
 /* Menu Styles */
 
 #menu {

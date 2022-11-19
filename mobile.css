@@ -159,6 +159,8 @@ html {
     font-weight: 400;
     font-style: normal;
 
+    color: #313638;
+
     z-index: 5;
 
     border: 2px solid #313638;
@@ -178,6 +180,8 @@ html {
     font-family: transducer,sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    color: #313638;
 
     z-index: 5;
 
@@ -216,4 +220,88 @@ html {
 
 #trend-container {
     display: none;
+}
+
+/* Explore Styles */
+
+.desktop-explore {
+    display: none;
+}
+
+#explore-container {
+    position: fixed;
+    top: 0;
+
+    height: 93vh;
+    width: 100vw;
+
+    border-bottom: 2px solid #313638;
+
+    z-index: 2;
+}
+
+.explore-head {
+    text-align: center;
+    border-bottom: 2px solid #313638;
+}
+
+.explore-head-text {
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: clamp(1.6rem, 2vw, 1.6rem);
+}
+
+.back-btn {
+    position: fixed;
+    left: 5vw;
+    margin-top: 1.3vh;
+
+    transform: scale(1.5);
+}
+
+#search-bar {
+    position: fixed;
+    top: 5vh;
+    margin-left: 15%;
+    
+    width: 70vw;
+
+    background: none;
+    border: 2px solid #313638;
+    border-radius: 25em;
+
+    text-align: center;
+
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.explore-tabs {
+    position: fixed;
+    top: 10vh;
+    margin-left: 6%;
+
+    text-align: center;
+
+
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.explore-tab {
+    text-decoration: none;
+    color: #313638;
+
+    padding: 2px;
+}
+
+.explore-tab.active {
+    color: #F09D51;
+    border-bottom: 2px solid #F09D51;
 }
