@@ -515,6 +515,10 @@ html {
 
 /* Settings Styles */
 
+.desktop-settings {
+    display: none;
+}
+
 #settings-container {
     position: fixed;
     top: 0;
@@ -544,18 +548,42 @@ html {
     position: fixed;
     left: 1vw;
     top: 10vh;
-    width: 10vw;
-    height: 50vh;
+    width: 50vw;
+    height: 30vh;
     margin-left: 1vw;
+
+    text-align: left;
 
     font-family: transducer, sans-serif;
     font-weight: 500;
     font-style: normal;
 
-    font-size: clamp(2rem, 4vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1rem);
+}
+
+.settings-menu-a {
+    position: fixed;
+    left: 1vw;
+    top: 10vh;
+    width: 30vw;
+    height: 30vh;
+    margin-left: 1vw;
+
+    text-align: left;
+
+    font-family: transducer, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: clamp(1rem, 2vw, 1rem);
 }
 
 .setting-item {
+    text-decoration: none;
+    color: #313638;
+}
+
+.setting-item-a {
     text-decoration: none;
     color: #313638;
 }
