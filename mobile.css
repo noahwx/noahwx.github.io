@@ -543,7 +543,7 @@ html {
 .settings-menu {
     position: fixed;
     left: 1vw;
-    top: 5vh;
+    top: 10vh;
     width: 10vw;
     height: 50vh;
     margin-left: 1vw;
@@ -552,10 +552,29 @@ html {
     font-weight: 500;
     font-style: normal;
 
-    font-size: clamp(1.2rem, 2vw, 1.2rem);
+    font-size: clamp(2rem, 4vw, 2rem);
 }
 
 .setting-item {
     text-decoration: none;
     color: #313638;
+}
+
+#search-bar-settings {
+    position: fixed;
+    left: 0;
+    margin-top: 1vh;
+    margin-left: 15%;
+
+    width: 70vw;
+
+    background: none;
+    border: 2px solid #313638;
+    border-radius: 25em;
+
+    text-align: center;
+
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }

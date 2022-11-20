@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Howl | Latest News</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles.css">
+        <title>Howl | Explore</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'>
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 1400px)" href="../mobile.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1401px)" href="../styles.css" />
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
         <link rel="stylesheet" href="https://use.typekit.net/gsg0mrd.css">
         <script src="https://kit.fontawesome.com/4bd977ebc8.js" crossorigin="anonymous"></script>
+        <script src="./app.js"></script>
     </head>
 
     <body>
         <div id="menu-container">
             <div>
+                <button class="mobile-btn" onclick="toggleNav()">
+                    <span>
+                        <img src="../assets/Logo.svg" class="mobile-logo">
+                    </span>
+                </button>
                 <a href="../index.html"><img src="../assets/Logo.svg" class="menu-logo"></a>
             </div>
             <div id="menu">
+                <div class="mobile-ui">
+                    <div class="profile-img-mobile"></div>
+                    <div class="profile-username-m"><a href="../profile.html">@Username</a></div>
+                </div>
                 <div class="menu-items">
                     <a href="../index.html" class="menu-item">Home</a>
                     <a href="../explore.html" class="menu-item active">Explore</a>
@@ -26,15 +40,33 @@
             </div>
         </div>
 
-        <div id="explore-container">
+        <div class="desktop-explore">
+            <div id="explore-container">
+                <div class="explore-head">
+                    <div class="back-btn" onclick="history.back()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <h1 class="explore-head-text">Explore</h1>
+                </div>
+                <div class="explore-tabs">
+                    <input type="text" placeholder="Search Howl" id="search-bar">
+                    <a href="../explore.html" class="explore-tab">Trending</a>
+                    <a href="./news.html" class="explore-tab active">News</a>
+                    <a href="./sports.html" class="explore-tab">Sports</a>
+                    <a href="./entertainment.html" class="explore-tab">Entertainment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-explore">
             <div class="explore-head">
                 <div class="back-btn" onclick="history.back()">
                     <i class="fa-solid fa-arrow-left"></i>
                 </div>
                 <h1 class="explore-head-text">Explore</h1>
             </div>
+            <input type="text" placeholder="Search Howl" id="search-bar">
             <div class="explore-tabs">
-                <input type="text" placeholder="Search Howl" id="search-bar">
                 <a href="../explore.html" class="explore-tab">Trending</a>
                 <a href="./news.html" class="explore-tab active">News</a>
                 <a href="./sports.html" class="explore-tab">Sports</a>
