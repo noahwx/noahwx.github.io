@@ -85,6 +85,10 @@ html {
     display: none;
 }
 
+.mobile-settings {
+    display: none;
+}
+
 /* Menu Styles */
 
 #menu {
