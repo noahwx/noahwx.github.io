@@ -77,6 +77,14 @@ html {
     display: none;
 }
 
+.mobile-profile {
+    display: none;
+}
+
+.mobile-ui {
+    display: none;
+}
+
 /* Menu Styles */
 
 #menu {

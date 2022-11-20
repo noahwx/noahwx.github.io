@@ -3,10 +3,16 @@
     <head>
         <title>Howl | Settings</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'>
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 1400px)" href="./mobile.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1401px)" href="./styles.css" />
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
         <link rel="stylesheet" href="https://use.typekit.net/gsg0mrd.css">
         <script src="https://kit.fontawesome.com/4bd977ebc8.js" crossorigin="anonymous"></script>
+        <script src="./app.js"></script>
     </head>
 
     <body>
@@ -26,24 +32,48 @@
             </div>
         </div>
 
-        <div id="settings-container">
-            <div class="settings-head">
-                <div class="back-btn" onclick="history.back()">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </div>
-                <h1 class="settings-head-text">Settings</h1>
-                <div class="settings-menu">
-                    <div class="settings-items">
-                        <a href="./settings/account.html" class="setting-item t">Account</a>
-                        <a href="./settings/monetizations.html" class="setting-item">Monetizations</a>
-                        <a href="./settings/notifications.html" class="setting-item">Notifications</a>
-                        <a href="./settings/messages.html" class="setting-item">Messages</a>
-                        <a href="./settings/privacy.html" class="setting-item">Privacy</a>
-                        <a href="./settings/accessibility.html" class="setting-item">Accessibility</a>
-                        <a href="./settings/support.html" class="setting-item">Support</a>
+        <div class="desktop-settings">
+            <div id="settings-container">
+                <div class="settings-head">
+                    <div class="back-btn" onclick="history.back()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <h1 class="settings-head-text">Settings</h1>
+                    <div class="settings-menu">
+                        <div class="settings-items">
+                            <a href="./settings/account.html" class="setting-item t">Account</a>
+                            <a href="./settings/monetizations.html" class="setting-item">Monetizations</a>
+                            <a href="./settings/notifications.html" class="setting-item">Notifications</a>
+                            <a href="./settings/messages.html" class="setting-item">Messages</a>
+                            <a href="./settings/privacy.html" class="setting-item">Privacy</a>
+                            <a href="./settings/accessibility.html" class="setting-item">Accessibility</a>
+                            <a href="./settings/support.html" class="setting-item">Support</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="mobile-settings">
+            <div id="settings-container">
+                <div class="settings-head">
+                    <div class="back-btn" onclick="history.back()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <h1 class="settings-head-text">Settings</h1>
+                    <div class="settings-menu">
+                        <div class="settings-items">
+                            <a href="./settings/account.html" class="setting-item t">Account</a>
+                            <a href="./settings/monetizations.html" class="setting-item">Monetizations</a>
+                            <a href="./settings/notifications.html" class="setting-item">Notifications</a>
+                            <a href="./settings/messages.html" class="setting-item">Messages</a>
+                            <a href="./settings/privacy.html" class="setting-item">Privacy</a>
+                            <a href="./settings/accessibility.html" class="setting-item">Accessibility</a>
+                            <a href="./settings/support.html" class="setting-item">Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
     </body>
 </html>
