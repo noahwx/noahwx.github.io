@@ -18,9 +18,18 @@
     <body>
         <div id="menu-container">
             <div>
+                <button class="mobile-btn" onclick="toggleNav()">
+                    <span>
+                        <img src="./assets/Logo.svg" class="mobile-logo">
+                    </span>
+                </button>
                 <a href="./index.html"><img src="./assets/Logo.svg" class="menu-logo"></a>
             </div>
             <div id="menu">
+                <div class="mobile-ui">
+                    <div class="profile-img-mobile"></div>
+                    <div class="profile-username-m"><a href="./profile.html">@Username</a></div>
+                </div>
                 <div class="menu-items">
                     <a href="./index.html" class="menu-item">Home</a>
                     <a href="./explore.html" class="menu-item">Explore</a>
