@@ -361,6 +361,10 @@ html {
 
 /* Profile Container */
 
+.desktop-profile {
+    display: none;
+}
+
 #profile-container {
     position: fixed;
     top: 0;
